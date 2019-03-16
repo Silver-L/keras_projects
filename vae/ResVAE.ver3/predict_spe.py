@@ -18,11 +18,11 @@ import dataIO as io
 
 def predict_spe():
     parser = argparse.ArgumentParser(description='py, test_data_list, name_list, outdir')
-    parser.add_argument('--model', '-i1', default='F:/experiment_result/vae_32/decoder_model/decoder_500.hdf5',
+    parser.add_argument('--model', '-i1', default='',
                         help='model')
-    parser.add_argument('--truth_data_txt', '-i2', default='F:/data_info/ResVAE/test_ground_truth.txt',
+    parser.add_argument('--truth_data_txt', '-i2', default='',
                         help='name list')
-    parser.add_argument('--outdir', '-i3', default='F:/experiment_result/vae_random', help='outdir')
+    parser.add_argument('--outdir', '-i3', default='', help='outdir')
     args = parser.parse_args()
 
     if not (os.path.exists(args.outdir)):
