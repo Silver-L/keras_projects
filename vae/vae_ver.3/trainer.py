@@ -23,13 +23,13 @@ from model import Variational_auto_encoder
 def main():
     parser = argparse.ArgumentParser(description='py, train_data_txt, train_data_ture_txt, validation_data_txt, outdir')
 
-    parser.add_argument('--train_data_txt', '-i1', default='F:/data_info/VAE/train_data_list.txt',
+    parser.add_argument('--train_data_txt', '-i1', default='',
                         help='train data list')
 
-    parser.add_argument('--validation_data_txt', '-i2', default='F:/data_info/VAE/validation_data_list.txt',
+    parser.add_argument('--validation_data_txt', '-i2', default='',
                         help='validation data list')
 
-    parser.add_argument('--outdir', '-i3', default='F:/experiment_result/vae_2', help='outdir')
+    parser.add_argument('--outdir', '-i3', default='', help='outdir')
 
     args = parser.parse_args()
 
