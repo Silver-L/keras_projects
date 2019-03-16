@@ -18,17 +18,17 @@ from keras.models import load_model, Model
 
 def predict_gen():
     parser = argparse.ArgumentParser(description='py, test_data_list, name_list, outdir')
-    parser.add_argument('--test_data_list', '-i1', default='F:/data_info/ResVAE/test_data_list.txt',
+    parser.add_argument('--test_data_list', '-i1', default='',
                         help='test data')
-    parser.add_argument('--truth_data_txt', '-i2', default='F:/data_info/ResVAE/test_ground_truth.txt',
+    parser.add_argument('--truth_data_txt', '-i2', default='',
                         help='name list')
-    parser.add_argument('--name_list', '-i3', default='F:/data_info/ResVAE/test_data_name_list.txt',
+    parser.add_argument('--name_list', '-i3', default='',
                         help='name list')
-    parser.add_argument('--encoder_model', '-i4', default='F:/experiment_result/vae_32/encoder_model/encoder_113.hdf5',
+    parser.add_argument('--encoder_model', '-i4', default='',
                         help='model')
-    parser.add_argument('--decoder_model', '-i5', default='F:/experiment_result/vae_32/decoder_model/decoder_113.hdf5',
+    parser.add_argument('--decoder_model', '-i5', default='',
                         help='model')
-    parser.add_argument('--outdir', '-i6', default='F:/experiment_result/vae_result/test', help='outdir')
+    parser.add_argument('--outdir', '-i6', default='', help='outdir')
     args = parser.parse_args()
 
     if not (os.path.exists(args.outdir)):
