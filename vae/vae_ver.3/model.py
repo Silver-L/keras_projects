@@ -9,6 +9,7 @@ from keras.layers import *
 from keras.losses import mse
 import tensorflow as tf
 
+# image size
 pixel_dim = 368 * 304 *240
 
 class CustomVariationalLayer(Layer):
