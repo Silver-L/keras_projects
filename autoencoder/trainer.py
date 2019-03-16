@@ -24,21 +24,21 @@ from model import Autoencoder
 
 def main():
     parser = argparse.ArgumentParser(description='py, train_data_txt, train_data_ture_txt, validation_data_txt, outdir')
-    parser.add_argument('--train_data_txt', '-i1', default='F:/data_info/autoencoder/train_data_list.txt',
+    parser.add_argument('--train_data_txt', '-i1', default='',
                         help='train data list')
 
     parser.add_argument('--train_ground_truth_txt', '-i2',
-                        default='F:/data_info/autoencoder/train_ground_truth.txt',
+                        default='',
                         help='train ground truth list')
 
-    parser.add_argument('--validation_data_txt', '-i3', default='F:/data_info/autoencoder/validation_data_list.txt',
+    parser.add_argument('--validation_data_txt', '-i3', default='',
                         help='validation data list')
 
     parser.add_argument('--validation_ground_truth_txt', '-i4',
-                        default='F:/data_info/autoencoder/validation_ground_truth.txt',
+                        default='',
                         help='validation ground truth list')
 
-    parser.add_argument('--outdir', '-i5', default='D:/M1_research/autoencoder/result/test', help='outdir')
+    parser.add_argument('--outdir', '-i5', default='', help='outdir')
     args = parser.parse_args()
 
     # check folder
