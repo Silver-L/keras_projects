@@ -1,0 +1,6 @@
+*.pyc
+*.xml
+*.iml
+/vae/vae_mnist_ver.2/*
+/vae/star_vae/*
+/vae/vae_mnist/*
