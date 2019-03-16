@@ -16,13 +16,13 @@ import SimpleITK as sitk
 
 def predict():
     parser = argparse.ArgumentParser(description='py, test_data_list, name_list, outdir')
-    parser.add_argument('--test_data_list', '-i1', default='F:/data_info/autoencoder/test_data_list.txt',
+    parser.add_argument('--test_data_list', '-i1', default='',
                         help='test data')
-    parser.add_argument('--name_list', '-i2', default='F:/data_info/autoencoder/test_data_name_list.txt',
+    parser.add_argument('--name_list', '-i2', default='',
                         help='name list')
-    parser.add_argument('--model', '-i3', default='D:/M1_research/autoencoder/result/model/weights.2372-0.43.hdf5',
+    parser.add_argument('--model', '-i3', default='',
                         help='model')
-    parser.add_argument('--outdir', '-i4', default='D:/M1_research/autoencoder/result/predict', help='outdir')
+    parser.add_argument('--outdir', '-i4', default='', help='outdir')
     args = parser.parse_args()
 
     if not (os.path.exists(args.outdir)):
