@@ -1,5 +1,5 @@
 """
-* @Variational Auto-Encoder
+* @Variational Auto-Encoder with resnet
 * @Author: Zhihui Lu
 * @Date: 2018/08/28
 """
